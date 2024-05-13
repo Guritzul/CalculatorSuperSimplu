@@ -28,8 +28,6 @@ void Impartire(float a, float b)
 
 int main() 
 {
-	int calcul = NushCeEAsta(); std::cout << calcul << "\n";
-
 	int n, m;
 	std::cin >> n; std::cout << "\n";
 	std::cin >> m; std::cout << "\n";
