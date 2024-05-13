@@ -28,11 +28,32 @@ void Impartire(float a, float b)
 
 int main() 
 {
-	int calcul = NushCeEAsta();
-	std::cout << calcul << "\n";
+	int calcul = NushCeEAsta(); std::cout << calcul << "\n";
+
 	int n, m;
-	std::cin >> n;
-	std::cout << "\n";
-	std::cin >> m;
-	std::cout << "\n";
+	std::cin >> n; std::cout << "\n";
+	std::cin >> m; std::cout << "\n";
+
+	char c;
+	std::cout << "Tasteaza unul din calculele pe care vrei sa le efectuezi [+, -, *, /]: "; std::cin >> c;
+
+	switch (c)
+	{
+	case '+':
+		Adunare(n, m);
+		break;
+	case '-' :
+		Scadere(n, m);
+		break;
+	case '*':
+		Inmultire(n, m);
+		break;
+	case '/':
+		Impartire(n, m);
+		break;
+	default:
+		break;
+	}
+
+
 }
