@@ -29,8 +29,8 @@ void Impartire(float a, float b)
 int main() 
 {
 	int n, m;
-	std::cin >> n; std::cout << "\n";
-	std::cin >> m; std::cout << "\n";
+	std::cout << "Tastati primul numar: "; std::cin >> n;
+	std::cout << "Tastati al doilea numar: "; std::cin >> m; std::cout << "\n";
 
 	char c;
 	std::cout << "Tasteaza unul din calculele pe care vrei sa le efectuezi [+, -, *, /]: "; std::cin >> c;
@@ -52,6 +52,5 @@ int main()
 	default:
 		break;
 	}
-
-
+	std::cout << "\n"; int calcul = NushCeEAsta(); std::cout << calcul << "\n";
 }
